@@ -23,6 +23,7 @@
     outline: none;
     background: transparent;
     transform: translateX(5%);
+    -webkit-animation: text-shadow-multi-color 3s ease 1s infinite;
     animation: text-shadow-multi-color 3s ease 1s infinite;
 }
 
