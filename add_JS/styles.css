@@ -1,0 +1,42 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cat {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    filter: hue-rotate(90deg);
+}
+
+#change {
+    cursor: pointer;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 30px;
+    border: 1px dotted #f00;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    transform: translateX(5%);
+    animation: text-shadow-multi-color 3s ease 1s infinite;
+}
+
+@keyframes text-shadow-multi-color {
+    0% {
+        text-shadow: 5px 5px 5px rgb(236, 57, 87);
+    }
+    33% {
+        text-shadow: 5px 5px 5px rgb(53, 228, 82);
+    }
+    66% {
+        text-shadow: 5px 5px 5px rgb(4, 4, 127);
+    }
+    100% {
+        text-shadow: 5px 5px 5px rgb(199, 224, 31);
+    }
+}
