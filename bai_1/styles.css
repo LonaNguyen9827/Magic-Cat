@@ -1,0 +1,59 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box-shadow */
+
+/* .image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    box-shadow: 0 0 10px black;
+} */
+
+/* Drop shadow */
+.image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px black);
+}
+
+.chat {
+    max-width: 400px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    padding: 8px;
+    -webkit-filter: drop-shadow(0 0 5px #000);
+    filter: drop-shadow(0 0 5px #000);
+    position: relative;
+}
+
+.chat::before {
+    content: "";
+    top: 128px;
+    right: 24px;
+    position: absolute;
+    border: 20px solid;
+    border-color: #fff transparent transparent;
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(98%) sepia(27%) saturate(2896%)
+        hue-rotate(205deg) brightness(106%) contrast(101%);
+}
+
+.panda {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    filter: hue-rotate(90deg);
+}
